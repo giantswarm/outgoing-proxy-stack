@@ -1,4 +1,4 @@
-name: capa-internal-proxy
+name: outgoing-proxy
 serviceType: managed
 
 project:
