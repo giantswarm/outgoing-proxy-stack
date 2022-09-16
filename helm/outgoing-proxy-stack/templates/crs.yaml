@@ -22,6 +22,7 @@ kind: ConfigMap
 metadata:
   labels:
     giantswarm.io/cluster: {{ .Values.cluster.name }}
+    {{- include "labels.common" $ | nindent 4 }}
   name: {{ .Values.cluster.name }}-userconfig
   namespace: {{ $.Release.Namespace }}
 ---
@@ -31,6 +32,7 @@ metadata:
   annotations:
     chart-operator.giantswarm.io/force-helm-upgrade: "yes"
   labels:
+    giantswarm.io/cluster: {{ .Values.cluster.name }}
     {{- include "labels.common" $ | nindent 4 }}
   name: {{ .Values.cluster.name }}
   namespace: {{ $.Release.Namespace }}
@@ -59,6 +61,7 @@ data:
 kind: ConfigMap
 metadata:
   labels:
+    {{- include "labels.common" $ | nindent 4 }}
     giantswarm.io/cluster: {{ .Values.cluster.name }}
   name: {{ .Values.cluster.name }}-default-apps-userconfig
   namespace: {{ $.Release.Namespace }}
@@ -67,7 +70,8 @@ apiVersion: application.giantswarm.io/v1alpha1
 kind: App
 metadata:
   labels:
-    app-operator.giantswarm.io/version: 0.0.0
+    giantswarm.io/cluster: {{ .Values.cluster.name }}
+    {{- include "labels.common" $ | nindent 4 }}
   name: {{ .Values.cluster.name }}-default-apps
   namespace: {{ $.Release.Namespace }}
 spec:
@@ -93,10 +97,8 @@ metadata:
   annotations:
     chart-operator.giantswarm.io/force-helm-upgrade: "false"
   labels:
-    app-operator.giantswarm.io/version: 0.0.0
-    app.kubernetes.io/name: squid-proxy-app
+    {{- include "labels.common" $ | nindent 4 }}
     giantswarm.io/cluster: {{ .Values.cluster.name }}
-    giantswarm.io/service-type: managed
   name: {{ .Values.cluster.name }}-squid
   namespace: {{ $.Release.Namespace }}
 spec:
