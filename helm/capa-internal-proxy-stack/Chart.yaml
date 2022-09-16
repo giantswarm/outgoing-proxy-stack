@@ -5,7 +5,7 @@ appVersion: "0.1.0"
 name: capa-internal-proxy-stack
 
 # Please describe what the app provides in a sentence or two.
-description:  repository to aggregate CRs necessery to create capa internal outgoing proxy cluster
+description: repository to aggregate CRs necessery to create capa internal outgoing proxy cluster
 
 home: https://github.com/giantswarm/capa-internal-proxy-stack
 
