@@ -71,6 +71,7 @@ apiVersion: application.giantswarm.io/v1alpha1
 kind: App
 metadata:
   labels:
+    app-operator.giantswarm.io/version: 0.0.0
     giantswarm.io/cluster: {{ .Values.cluster.name }}
     {{- include "labels.common" $ | nindent 4 }}
   name: {{ .Values.cluster.name }}-default-apps
