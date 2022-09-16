@@ -1,0 +1,14 @@
+apiVersion: v2
+appVersion: "0.1.0"
+
+# Please make sure your name DOES NOT end in "app" or "-app".
+name: capa-internal-proxy-stack
+
+# Please describe what the app provides in a sentence or two.
+description:  repository to aggregate CRs necessery to create capa internal outgoing proxy cluster
+
+home: https://github.com/giantswarm/capa-internal-proxy-stack
+
+version: [[ .Version ]]
+annotations:
+  application.giantswarm.io/team: team-hydra
