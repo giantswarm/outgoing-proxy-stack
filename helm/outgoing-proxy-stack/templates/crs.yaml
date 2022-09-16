@@ -93,6 +93,7 @@ metadata:
   annotations:
     chart-operator.giantswarm.io/force-helm-upgrade: "false"
   labels:
+    app-operator.giantswarm.io/version: 0.0.0
     app.kubernetes.io/name: squid-proxy-app
     giantswarm.io/cluster: {{ .Values.cluster.name }}
     giantswarm.io/service-type: managed
