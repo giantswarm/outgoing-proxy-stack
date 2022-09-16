@@ -1,0 +1,23 @@
+name: capa-internal-proxy
+serviceType: managed
+
+project:
+  branch: "[[ .Branch ]]"
+  commit: "[[ .SHA ]]"
+
+apps:
+  # used by renovate
+  # repo: giantswarm/default-apps-aws
+  version: "0.5.4"
+
+cluster:
+  name: outgoing-proxy
+  organization: giantswarm
+  # used by renovate
+  # repo: giantswarm/cluster-aws
+  version: "0.9.2"
+
+proxy:
+  # used by renovate
+  # repo: giantswarm/squid-proxy-app
+  version: "0.1.0"
