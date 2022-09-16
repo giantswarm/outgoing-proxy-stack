@@ -32,6 +32,7 @@ metadata:
   annotations:
     chart-operator.giantswarm.io/force-helm-upgrade: "yes"
   labels:
+    app-operator.giantswarm.io/version: 0.0.0
     giantswarm.io/cluster: {{ .Values.cluster.name }}
     {{- include "labels.common" $ | nindent 4 }}
   name: {{ .Values.cluster.name }}
