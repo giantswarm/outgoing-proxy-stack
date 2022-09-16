@@ -40,11 +40,11 @@ spec:
   namespace: {{ $.Release.Namespace }}
   kubeConfig:
     context:
-      name: {{ .Values.cluster.name }}-admin@{{ .Values.cluster.name }}
-    inCluster: false
+      name: ""
+    inCluster: true
     secret:
-      name: {{ .Values.cluster.name }}-kubeconfig
-      namespace: {{ $.Release.Namespace }}
+      name: ""
+      namespace: ""
   userConfig:
     configMap:
       name: {{ .Values.cluster.name }}-userconfig
