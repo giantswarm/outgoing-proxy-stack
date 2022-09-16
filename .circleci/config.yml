@@ -8,10 +8,10 @@ workflows:
       - architect/push-to-app-catalog:
           context: "architect"
           executor: "app-build-suite" # uncomment this if you want automatic metadata generation and helm chart linting
-          name: "package and push capa-internal-proxy-stack chart"
+          name: "package and push outgoing-proxy-stack chart"
           app_catalog: "cluster-catalog"
           app_catalog_test: "cluster-test-catalog"
-          chart: "capa-internal-proxy-stack"
+          chart: "outgoing-proxy-stack"
           # Trigger job on git tag.
           filters:
             tags:

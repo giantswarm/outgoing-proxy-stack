@@ -1,5 +1,5 @@
 replace-chart-version-with-git: true
 generate-metadata: true
-chart-dir: ./helm/capa-internal-proxy-stack
+chart-dir: ./helm/outgoing-proxy-stack
 destination: ./build
 ct-config: ./.circleci/ct-config.yaml
