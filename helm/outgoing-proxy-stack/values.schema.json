@@ -10,6 +10,17 @@
                 }
             }
         },
+        "aws": {
+            "type": "object",
+            "properties": {
+                "azs": {
+                    "type": "array"
+                },
+                "region": {
+                    "type": "string"
+                }
+            }
+        },
         "cluster": {
             "type": "object",
             "properties": {
