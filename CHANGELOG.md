@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add aws region and avaiability zones to `values.yaml`.
+
 ## [0.1.4] - 2022-09-16
 
 ### Changed
