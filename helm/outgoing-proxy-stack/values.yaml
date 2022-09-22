@@ -5,6 +5,11 @@ project:
   branch: "[[ .Branch ]]"
   commit: "[[ .SHA ]]"
 
+aws:
+  region: ""
+  azs: []
+  
+
 apps:
   # used by renovate
   # repo: giantswarm/default-apps-aws

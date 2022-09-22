@@ -1,7 +1,8 @@
 apiVersion: v1
 data:
   values: |
-    aws: {}
+    aws: 
+      region: {{ .Values.aws.region }}
     bastion: 
       enabled: false
     clusterName: {{ .Values.cluster.name }}
@@ -14,6 +15,7 @@ data:
       maxSize: 2
       minSize: 2
       name: machine-pool0
+      availabilityZones: {{ .Values.aws.azs }}
       rootVolumeSizeGB: 100
     network:
       availabilityZoneUsageLimit: 3
