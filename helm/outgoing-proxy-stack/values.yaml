@@ -8,7 +8,6 @@ project:
 aws:
   region: ""
   azs: []
-  
 
 apps:
   # used by renovate
