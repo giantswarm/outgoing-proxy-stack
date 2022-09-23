@@ -115,5 +115,5 @@ spec:
       name: {{ .Values.cluster.name }}-kubeconfig
       namespace: {{ $.Release.Namespace }}
   name: squid-proxy
-  namespace: kube-system
+  namespace: default
   version: {{ .Values.proxy.version }}
