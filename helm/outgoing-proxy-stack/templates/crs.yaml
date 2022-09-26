@@ -8,8 +8,6 @@ data:
     clusterName: {{ .Values.cluster.name }}
     proxy:
       enabled: false
-    controlPlane:
-      replicas: 1
     machinePools:
     - instanceType: m5.xlarge
       maxSize: 2
