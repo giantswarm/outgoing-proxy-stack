@@ -24,4 +24,4 @@ cluster:
 proxy:
   # used by renovate
   # repo: giantswarm/squid-proxy-app
-  version: "0.1.2"
+  version: "0.1.3"
