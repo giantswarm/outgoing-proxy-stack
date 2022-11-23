@@ -156,7 +156,7 @@ spec:
       name: {{ .Values.cluster.name }}-kubeconfig
       namespace: {{ $.Release.Namespace }}
   name: squid-proxy
-  namespace: default
+  namespace: kube-system
   userConfig:
     configMap:
       name: {{ .Values.cluster.name }}-squid-userconfig
