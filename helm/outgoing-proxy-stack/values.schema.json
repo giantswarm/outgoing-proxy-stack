@@ -5,6 +5,9 @@
         "apps": {
             "type": "object",
             "properties": {
+                "cilliumApiEndpoint": {
+                    "type": "string"
+                },
                 "version": {
                     "type": "string"
                 }
