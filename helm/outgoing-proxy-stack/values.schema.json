@@ -55,6 +55,9 @@
         "proxy": {
             "type": "object",
             "properties": {
+                "baseDomain": {
+                    "type": "string"
+                },
                 "version": {
                     "type": "string"
                 }

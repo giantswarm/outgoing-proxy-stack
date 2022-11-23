@@ -98,6 +98,9 @@ spec:
 apiVersion: v1
 data:
   values: |
+    {{- if ne .Values.proxy.baseDomain "" }}
+    baseDomain: "{{ .Values.proxy.baseDomain }}"
+    {{- end }}
     controller:
       service:
         public: false

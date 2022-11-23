@@ -23,6 +23,7 @@ cluster:
   version: "0.17.1"
 
 proxy:
+  baseDomain: ""
   # used by renovate
   # repo: giantswarm/squid-proxy-app
   version: "0.1.3"
