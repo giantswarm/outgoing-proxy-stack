@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.11] - 2022-11-23
 
 - Add more custom values.
+- Set `baseDomain` for proxy app if the values is not empty.
 
 ### Added
 
