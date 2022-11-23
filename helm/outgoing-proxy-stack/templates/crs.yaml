@@ -16,6 +16,8 @@ data:
       availabilityZones: {{ .Values.aws.azs | toYaml | nindent 8 }}
       rootVolumeSizeGB: 100
     network:
+      vpcCIDR: {{ .Values.cluster.vpcCIDR }}
+      topologyMode: GiantSwarmManaged
       availabilityZoneUsageLimit: 3
     organization: {{ .Values.cluster.organization }}
 kind: ConfigMap
@@ -93,6 +95,21 @@ spec:
       namespace: {{ $.Release.Namespace }}
   version: {{ .Values.apps.version }}
 ---
+apiVersion: v1
+data:
+  values: |
+    controller:
+      service:
+        public: false
+    provider: "capa"
+kind: ConfigMap
+metadata:
+  labels:
+    {{- include "labels.common" $ | nindent 4 }}
+    giantswarm.io/cluster: {{ .Values.cluster.name }}
+  name: {{ .Values.cluster.name }}-squid-userconfig
+  namespace: {{ $.Release.Namespace }}
+---
 apiVersion: application.giantswarm.io/v1alpha1
 kind: App
 metadata:
@@ -114,4 +131,8 @@ spec:
       namespace: {{ $.Release.Namespace }}
   name: squid-proxy
   namespace: default
+  userConfig:
+    configMap:
+      name: {{ .Values.cluster.name }}-squid-userconfig
+      namespace: {{ $.Release.Namespace }}
   version: {{ .Values.proxy.version }}
