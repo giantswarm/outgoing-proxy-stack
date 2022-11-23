@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Set custom cilium api endpoint if the value is non-empty.
+
 ## [0.1.13] - 2022-11-23
 
 - Bump versions for components.

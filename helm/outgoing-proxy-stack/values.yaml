@@ -10,6 +10,7 @@ aws:
   azs: []
 
 apps:
+  cilliumApiEndpoint: ""
   # used by renovate
   # repo: giantswarm/default-apps-aws
   version: "0.10.0"
