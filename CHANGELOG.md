@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Move `squid-proxy` to `kube-system` namespace and bump version to `0.2.0`.
+
 ## [0.2.0] - 2022-11-23
 
 - Set custom cilium api endpoint if the value is non-empty.
