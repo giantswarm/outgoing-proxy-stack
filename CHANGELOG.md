@@ -7,19 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Bump versions for components.
+
 ## [0.1.11] - 2022-11-23
 
-## [0.1.10] - 2022-11-02
-
-## [0.1.9] - 2022-09-26
-
-## [0.1.8] - 2022-09-23
-
-## [0.1.7] - 2022-09-22
-
-## [0.1.6] - 2022-09-22
-
-## [0.1.5] - 2022-09-22
+- Add more custom values.
 
 ### Added
 
