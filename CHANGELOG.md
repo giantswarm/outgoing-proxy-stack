@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2022-11-23
+
 - Set custom cilium api endpoint if the value is non-empty.
 
 ## [0.1.13] - 2022-11-23
@@ -42,7 +44,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - changed: `app.giantswarm.io` label group was changed to `application.giantswarm.io`
 
-[Unreleased]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.1.13...HEAD
+[Unreleased]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.1.13...v0.2.0
 [0.1.13]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.1.11...v0.1.13
 [0.1.11]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.1.10...v0.1.11
 [0.1.10]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.1.9...v0.1.10
