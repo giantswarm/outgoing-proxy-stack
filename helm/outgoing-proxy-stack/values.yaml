@@ -27,4 +27,4 @@ proxy:
   baseDomain: ""
   # used by renovate
   # repo: giantswarm/squid-proxy-app
-  version: "0.2.0"
+  version: "0.2.1"
