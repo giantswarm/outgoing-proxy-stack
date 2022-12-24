@@ -16,6 +16,7 @@ apps:
   version: "0.10.0"
 
 cluster:
+  baseDomain: ""
   name: outgoing-proxy
   vpcCIDR: 10.255.0.0/16
   organization: giantswarm
@@ -24,7 +25,6 @@ cluster:
   version: "0.17.1"
 
 proxy:
-  baseDomain: ""
   # used by renovate
   # repo: giantswarm/squid-proxy-app
   version: "0.2.1"

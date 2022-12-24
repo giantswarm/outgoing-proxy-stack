@@ -3,6 +3,7 @@ data:
   values: |
     aws: 
       region: {{ .Values.aws.region }}
+    baseDomain: {{ .Values.cluster.baseDomain }}
     bastion: 
       enabled: false
     clusterName: {{ .Values.cluster.name }}
@@ -121,8 +122,8 @@ spec:
 apiVersion: v1
 data:
   values: |
-    {{- if ne .Values.proxy.baseDomain "" }}
-    baseDomain: "{{ .Values.proxy.baseDomain }}"
+    {{- if ne .Values.cluster.baseDomain "" }}
+    baseDomain: "{{ .Values.cluster.baseDomain }}"
     {{- end }}
     controller:
       service:
