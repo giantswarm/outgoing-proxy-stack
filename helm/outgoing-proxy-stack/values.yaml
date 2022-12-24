@@ -17,6 +17,7 @@ apps:
 
 cluster:
   baseDomain: ""
+  dnsMode: "public"
   name: outgoing-proxy
   vpcCIDR: 10.255.0.0/16
   organization: giantswarm

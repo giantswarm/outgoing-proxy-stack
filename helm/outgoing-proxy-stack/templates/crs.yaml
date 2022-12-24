@@ -18,6 +18,7 @@ data:
       rootVolumeSizeGB: 100
     network:
       vpcCIDR: {{ .Values.cluster.vpcCIDR }}
+      dnsMode: {{ .Values.cluster.dnsMode }}
       topologyMode: GiantSwarmManaged
       availabilityZoneUsageLimit: 3
     organization: {{ .Values.cluster.organization }}
