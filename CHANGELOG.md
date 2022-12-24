@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.3] - 2022-12-24
+
+- propagate `baseDomain` to cluster.
+
 ## [0.2.2] - 2022-11-29
 
 ## [0.2.1] - 2022-11-23
@@ -50,7 +54,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - changed: `app.giantswarm.io` label group was changed to `application.giantswarm.io`
 
-[Unreleased]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.2.2...HEAD
+[Unreleased]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.2.3...HEAD
+[0.2.3]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.1.13...v0.2.0
