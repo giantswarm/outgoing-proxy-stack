@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.5] - 2023-01-27
+
 ## [0.2.4] - 2022-12-24
 
 - configure cluster `dnsMode` via values.
@@ -58,7 +60,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - changed: `app.giantswarm.io` label group was changed to `application.giantswarm.io`
 
-[Unreleased]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.2.4...HEAD
+[Unreleased]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.2.5...HEAD
+[0.2.5]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.2.4...v0.2.5
 [0.2.4]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.2.3...v0.2.4
 [0.2.3]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.2.1...v0.2.2
