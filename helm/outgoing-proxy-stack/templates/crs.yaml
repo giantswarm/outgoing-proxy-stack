@@ -21,6 +21,23 @@ data:
       dnsMode: {{ .Values.cluster.dnsMode }}
       topologyMode: GiantSwarmManaged
       availabilityZoneUsageLimit: 3
+      subnets:
+      - cidrBlocks:
+        - cidr: 10.255.0.0/20
+          availabilityZone: a
+        - cidr: 10.255.16.0/20
+          availabilityZone: b
+        - cidr: 10.255.32.0/20
+          availabilityZone: c
+        isPublic: true
+      - cidrBlocks:
+        - cidr: 10.255.64.0/18
+          availabilityZone: a
+        - cidr: 10.255.128.0/18
+          availabilityZone: b
+        - cidr: 10.255.192.0/18
+          availabilityZone: c
+        isPublic: false
     organization: {{ .Values.cluster.organization }}
 kind: ConfigMap
 metadata:
