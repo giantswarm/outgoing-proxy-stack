@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- changes to upgrade `cluster-aws` version to `0.32.0`
+- changes to upgrade `default-apps-aws` version to `0.26.0`
+
 ## [0.3.0] - 2023-07-12
 
 - changes to upgrade `cluster-aws` version to `0.27.0`

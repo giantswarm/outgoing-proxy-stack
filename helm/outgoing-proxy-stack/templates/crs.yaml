@@ -1,44 +1,48 @@
 apiVersion: v1
 data:
   values: |
-    aws:
-      region: {{ .Values.aws.region }}
     baseDomain: {{ .Values.cluster.baseDomain }}
-    bastion:
-      enabled: false
-    clusterName: {{ .Values.cluster.name }}
-    proxy:
-      enabled: false
-    machinePools:
+    providerSpecific:
+      region: {{ .Values.aws.region }}
+    connectivity:
+      bastion:
+        enabled: false
+      availabilityZoneUsageLimit: 3
+      dns:
+        mode: {{ .Values.cluster.dnsMode }}
+      subnets:
+        - cidrBlocks:
+            - cidr: 10.255.0.0/20
+              availabilityZone: a
+            - cidr: 10.255.16.0/20
+              availabilityZone: b
+            - cidr: 10.255.32.0/20
+              availabilityZone: c
+          isPublic: true
+        - cidrBlocks:
+            - cidr: 10.255.64.0/18
+              availabilityZone: a
+            - cidr: 10.255.128.0/18
+              availabilityZone: b
+            - cidr: 10.255.192.0/18
+              availabilityZone: c
+          isPublic: false
+      topology:
+        mode: GiantSwarmManaged
+      network:
+        vpcCidr: {{ .Values.cluster.vpcCIDR }}
+      proxy:
+        enabled: false
+    metadata:
+      name: {{ .Values.cluster.name }}
+      organization: {{ .Values.cluster.organization }}
+    nodePools:
       def00:
         instanceType: m5.xlarge
         maxSize: 2
         minSize: 2
         availabilityZones: {{ .Values.aws.azs | toYaml | nindent 8 }}
         rootVolumeSizeGB: 100
-    network:
-      vpcCIDR: {{ .Values.cluster.vpcCIDR }}
-      dnsMode: {{ .Values.cluster.dnsMode }}
-      topologyMode: GiantSwarmManaged
-      availabilityZoneUsageLimit: 3
-      subnets:
-      - cidrBlocks:
-        - cidr: 10.255.0.0/20
-          availabilityZone: a
-        - cidr: 10.255.16.0/20
-          availabilityZone: b
-        - cidr: 10.255.32.0/20
-          availabilityZone: c
-        isPublic: true
-      - cidrBlocks:
-        - cidr: 10.255.64.0/18
-          availabilityZone: a
-        - cidr: 10.255.128.0/18
-          availabilityZone: b
-        - cidr: 10.255.192.0/18
-          availabilityZone: c
-        isPublic: false
-    organization: {{ .Values.cluster.organization }}
 kind: ConfigMap
 metadata:
   labels:
@@ -122,6 +126,10 @@ metadata:
   namespace: {{ $.Release.Namespace }}
 spec:
   catalog: cluster
+  config:
+    configMap:
+      name: {{ .Values.cluster.name }}-cluster-values
+      namespace: {{ $.Release.Namespace }}
   kubeConfig:
     context:
       name: ""
