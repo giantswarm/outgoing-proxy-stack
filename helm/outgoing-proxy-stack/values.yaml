@@ -13,7 +13,7 @@ apps:
   cilliumApiEndpoint: ""
   # used by renovate
   # repo: giantswarm/default-apps-aws
-  version: "0.16.0"
+  version: "0.19.1"
 
 cluster:
   baseDomain: ""
@@ -23,9 +23,9 @@ cluster:
   organization: giantswarm
   # used by renovate
   # repo: giantswarm/cluster-aws
-  version: "0.22.0"
+  version: "0.27.0"
 
 proxy:
   # used by renovate
   # repo: giantswarm/squid-proxy-app
-  version: "0.2.1"
+  version: "0.3.1"
