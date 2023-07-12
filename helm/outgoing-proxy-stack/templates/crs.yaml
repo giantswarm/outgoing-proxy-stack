@@ -1,10 +1,10 @@
 apiVersion: v1
 data:
   values: |
-    aws: 
+    aws:
       region: {{ .Values.aws.region }}
     baseDomain: {{ .Values.cluster.baseDomain }}
-    bastion: 
+    bastion:
       enabled: false
     clusterName: {{ .Values.cluster.name }}
     proxy:
