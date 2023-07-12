@@ -38,7 +38,7 @@ data:
       organization: {{ .Values.cluster.organization }}
     nodePools:
       def00:
-        instanceType: m5.xlarge
+        instanceType: r6i.xlarge
         maxSize: 2
         minSize: 2
         availabilityZones: {{ .Values.aws.azs | toYaml | nindent 8 }}
