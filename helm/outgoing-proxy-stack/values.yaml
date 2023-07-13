@@ -28,6 +28,6 @@ cluster:
 proxy:
   # used by renovate
   # repo: giantswarm/squid-proxy-app
-  version: "0.3.1"
+  version: "0.3.2"
   image: giantswarm/squid
   tag: 5.2-22.04_beta-giantswarm
