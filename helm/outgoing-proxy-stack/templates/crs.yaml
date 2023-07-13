@@ -155,6 +155,9 @@ data:
       service:
         public: false
     provider: "capa"
+    image:
+       name: "{{ .Values.proxy.image }}"
+       tag: "{{ .Values.proxy.tag }}"
 kind: ConfigMap
 metadata:
   labels:
