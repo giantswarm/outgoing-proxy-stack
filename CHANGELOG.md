@@ -7,7 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- changes to upgrade `cluster-aws` version to `0.35.0`
+
 ## [0.5.0] - 2023-07-13
+
+- changes to upgrade `cluster-aws` version to `0.34.0`
 
 ## [0.4.0] - 2023-07-12
 
@@ -29,8 +33,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.2.3] - 2022-12-24
 
 - propagate `baseDomain` to cluster.
-
-## [0.2.2] - 2022-11-29
 
 ## [0.2.1] - 2022-11-23
 
