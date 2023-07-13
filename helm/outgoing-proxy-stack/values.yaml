@@ -10,13 +10,13 @@ aws:
   azs: []
 
 apps:
-  cilliumApiEndpoint: ""
   # used by renovate
   # repo: giantswarm/default-apps-aws
   version: "0.30.0"
 
 cluster:
   baseDomain: ""
+  cilliumApiEndpoint: ""
   dnsMode: "public"
   name: outgoing-proxy
   vpcCIDR: 10.255.0.0/16

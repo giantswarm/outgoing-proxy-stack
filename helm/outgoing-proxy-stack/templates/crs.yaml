@@ -84,29 +84,6 @@ data:
   values: |
     clusterName: {{ .Values.cluster.name }}
     organization: {{ .Values.cluster.organization }}
-    {{- if ne .Values.apps.cilliumApiEndpoint "" }}
-    userConfig:
-      cilium:
-        configMap:
-          values: |
-            ipam:
-              mode: kubernetes
-            k8sServiceHost: {{ .Values.apps.cilliumApiEndpoint }}
-            k8sServicePort: 6443
-            kubeProxyReplacement: strict
-            hubble:
-              relay:
-                enabled: true
-            defaultPolicies:
-              enabled: true
-              tolerations:
-              - effect: NoSchedule
-                operator: Exists
-              - effect: NoExecute
-                operator: Exists
-              - key: CriticalAddonsOnly
-                operator: Exists
-    {{- end }}
 kind: ConfigMap
 metadata:
   labels:
