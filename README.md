@@ -1,5 +1,5 @@
-[![CircleCI](https://circleci.com/gh/giantswarm/squid-proxy-app.svg?style=shield)](https://circleci.com/gh/giantswarm/squid-proxy-app)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/giantswarm/outgoing-proxy-stack/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/giantswarm/outgoing-proxy-stack/tree/main)
 
 # outgoing-proxy-stack chart
 
- repository to aggregate CRs necessery to create capa internal outgoing proxy cluster 
+Repository to aggregate CRs necessery to create capa internal outgoing proxy cluster.
