@@ -11,4 +11,4 @@ home: https://github.com/giantswarm/outgoing-proxy-stack
 
 version: [[ .Version ]]
 annotations:
-  application.giantswarm.io/team: team-hydra
+  application.giantswarm.io/team: phoenix

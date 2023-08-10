@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Change team annotation to phoenix from hydra
+
 ## [0.6.1] - 2023-07-18
 
 - update squid app to `0.3.4`
