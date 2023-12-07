@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Change team annotation to phoenix from hydra
+- Bump cluster-aws to v0.51.0 and adapt to renamed values
+- Bump default-apps-aws to v0.40.0
 
 ## [0.6.1] - 2023-07-18
 
