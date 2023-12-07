@@ -23,7 +23,7 @@ cluster:
   organization: giantswarm
   # used by renovate
   # repo: giantswarm/cluster-aws
-  version: "0.36.2"
+  version: 0.51.0
 
 proxy:
   # used by renovate
