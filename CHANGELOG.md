@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Bump squid to 0.5.0.
+
 ## [0.7.0] - 2023-12-07
 
 ### Changed
