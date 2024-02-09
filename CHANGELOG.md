@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Updated squid proxy to 0.5.3 with latest allowlist
+
 ## [0.10.0] - 2024-02-08
 
 ### Changed
