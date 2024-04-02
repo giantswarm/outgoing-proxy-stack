@@ -6,8 +6,6 @@ data:
         region: {{ .Values.aws.region }}
       connectivity:
         baseDomain: {{ .Values.cluster.baseDomain }}
-        bastion:
-          enabled: false
         availabilityZoneUsageLimit: 3
         dns:
           mode: {{ .Values.cluster.dnsMode }}
