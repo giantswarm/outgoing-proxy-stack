@@ -7,7 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Disable bastion
+
 ## [0.11.1] - 2024-04-02
+
+### Changed
+
+- Update cluster to 0.59.1
 
 ## [0.11.0] - 2024-02-13
 
