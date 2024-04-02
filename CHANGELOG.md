@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.11.2] - 2024-04-02
+
 ### Changed
 
 - Disable bastion
@@ -129,7 +131,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - changed: `app.giantswarm.io` label group was changed to `application.giantswarm.io`
 
-[Unreleased]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.11.1...HEAD
+[Unreleased]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.11.2...HEAD
+[0.11.2]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.11.1...v0.11.2
 [0.11.1]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.11.0...v0.11.1
 [0.11.0]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.10.1...v0.11.0
 [0.10.1]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.10.0...v0.10.1
