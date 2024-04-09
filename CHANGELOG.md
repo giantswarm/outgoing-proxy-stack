@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.11.4] - 2024-04-09
+
 ## [0.11.3] - 2024-04-09
 
 ### Changed
@@ -137,7 +139,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - changed: `app.giantswarm.io` label group was changed to `application.giantswarm.io`
 
-[Unreleased]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.11.3...HEAD
+[Unreleased]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.11.4...HEAD
+[0.11.4]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.11.3...v0.11.4
 [0.11.3]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.11.2...v0.11.3
 [0.11.2]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.11.1...v0.11.2
 [0.11.1]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.11.0...v0.11.1
