@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.12.0] - 2024-05-06
+
 ### Changed
 
 - Upgrade `squid-proxy` to v0.6.0
@@ -147,7 +149,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - changed: `app.giantswarm.io` label group was changed to `application.giantswarm.io`
 
-[Unreleased]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.11.4...HEAD
+[Unreleased]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.12.0...HEAD
+[0.12.0]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.11.4...v0.12.0
 [0.11.4]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.11.3...v0.11.4
 [0.11.3]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.11.2...v0.11.3
 [0.11.2]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.11.1...v0.11.2
