@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Upgrade `squid-proxy` to v0.6.0
+
 ## [0.11.4] - 2024-04-09
 
 ### Changed
