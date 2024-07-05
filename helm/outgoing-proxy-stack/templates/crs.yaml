@@ -44,6 +44,28 @@ data:
           minSize: 2
           availabilityZones: {{- .Values.aws.azs | toYaml | nindent 10 }}
           rootVolumeSizeGB: 100
+      {{- if ne .Values.apps.cilliumApiEndpoint "" }}
+      apps:
+        cilium:
+          values: |
+            ipam:
+              mode: kubernetes
+            k8sServiceHost: {{ .Values.apps.cilliumApiEndpoint }}
+            k8sServicePort: 6443
+            kubeProxyReplacement: strict
+            hubble:
+              relay:
+                enabled: true
+            defaultPolicies:
+              enabled: true
+              tolerations:
+              - effect: NoSchedule
+                operator: Exists
+              - effect: NoExecute
+                operator: Exists
+              - key: CriticalAddonsOnly
+                operator: Exists
+      {{- end }}
 kind: ConfigMap
 metadata:
   labels:
@@ -79,74 +101,6 @@ spec:
       name: {{ .Values.cluster.name }}-userconfig
       namespace: {{ $.Release.Namespace }}
   version: {{ .Values.cluster.version }}
----
-apiVersion: v1
-data:
-  values: |
-    clusterName: {{ .Values.cluster.name }}
-    organization: {{ .Values.cluster.organization }}
-    deleteOptions:
-      moveAppsHelmOwnershipToClusterAws: {{ .Values.apps.deleteOptions.moveAppsHelmOwnershipToClusterAws }}
-    {{- if ne .Values.apps.cilliumApiEndpoint "" }}
-    userConfig:
-      cilium:
-        configMap:
-          values: |
-            ipam:
-              mode: kubernetes
-            k8sServiceHost: {{ .Values.apps.cilliumApiEndpoint }}
-            k8sServicePort: 6443
-            kubeProxyReplacement: strict
-            hubble:
-              relay:
-                enabled: true
-            defaultPolicies:
-              enabled: true
-              tolerations:
-              - effect: NoSchedule
-                operator: Exists
-              - effect: NoExecute
-                operator: Exists
-              - key: CriticalAddonsOnly
-                operator: Exists
-    {{- end }}
-kind: ConfigMap
-metadata:
-  labels:
-    {{- include "labels.common" $ | nindent 4 }}
-    giantswarm.io/cluster: {{ .Values.cluster.name }}
-  name: {{ .Values.cluster.name }}-default-apps-userconfig
-  namespace: {{ $.Release.Namespace }}
----
-apiVersion: application.giantswarm.io/v1alpha1
-kind: App
-metadata:
-  labels:
-    app-operator.giantswarm.io/version: 0.0.0
-    giantswarm.io/cluster: {{ .Values.cluster.name }}
-    {{- include "labels.common" $ | nindent 4 }}
-  name: {{ .Values.cluster.name }}-default-apps
-  namespace: {{ $.Release.Namespace }}
-spec:
-  catalog: cluster
-  config:
-    configMap:
-      name: {{ .Values.cluster.name }}-cluster-values
-      namespace: {{ $.Release.Namespace }}
-  kubeConfig:
-    context:
-      name: ""
-    inCluster: true
-    secret:
-      name: ""
-      namespace: ""
-  name: default-apps-aws
-  namespace: {{ $.Release.Namespace }}
-  userConfig:
-    configMap:
-      name: {{ .Values.cluster.name }}-default-apps-userconfig
-      namespace: {{ $.Release.Namespace }}
-  version: {{ .Values.apps.version }}
 ---
 apiVersion: v1
 data:
