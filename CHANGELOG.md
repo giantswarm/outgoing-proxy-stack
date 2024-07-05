@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Upgrade `cluster-aws` to `0.76.0`
+
+With this version, `cluster-aws` will take over reconciliation of all the default apps.
+
 ## [0.14.0] - 2024-07-05
 
 ### Changed
