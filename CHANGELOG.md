@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+This is an intermediate release in the `cluster-aws` [`v0.76.0` upgrade process](https://github.com/giantswarm/cluster-aws/releases/tag/v0.76.0).
+
+:warning: IMPORTANT: :warning: first apply version `0.13.0` of this chart and set `apps.deleteOptions.moveAppsHelmOwnershipToClusterAws` value to `true`, before upgrading to `0.14.0`.
+
+This release will:
+
+- Delete the `default-apps-aws` App CR
+- Migrate the cilium app config to the `cluster-aws` configuration
+
+After you've applied this version and the `default-apps-aws` has been removed, upgrade to the next release so `cluster-aws` takes over the default apps.
+
 ## [0.13.0] - 2024-07-05
 
 ### Changed
