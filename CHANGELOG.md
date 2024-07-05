@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+In preparation to upgrade `cluster-aws` to [`v0.76.0`](https://github.com/giantswarm/cluster-aws/releases/tag/v0.76.0):
+
+- Upgrade `default-apps-aws` to `0.52.0`
+- Upgrade `cluster-aws` to `0.75.0`
+- Add `apps.deleteOptions.moveAppsHelmOwnershipToClusterAws` value (defaults to `false`) to be able to migrate default apps to `cluster-aws`. Set this to `true` before upgrading to the next version of this app.
+
 ## [0.12.0] - 2024-05-06
 
 ### Changed

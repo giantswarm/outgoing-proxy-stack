@@ -13,7 +13,9 @@ apps:
   cilliumApiEndpoint: ""
   # used by renovate
   # repo: giantswarm/default-apps-aws
-  version: 0.51.0
+  version: 0.52.0
+  deleteOptions:
+    moveAppsHelmOwnershipToClusterAws: false
 
 cluster:
   baseDomain: ""
@@ -23,7 +25,7 @@ cluster:
   organization: giantswarm
   # used by renovate
   # repo: giantswarm/cluster-aws
-  version: 0.68.0
+  version: 0.75.0
 
 proxy:
   # used by renovate
