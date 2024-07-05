@@ -85,6 +85,8 @@ data:
   values: |
     clusterName: {{ .Values.cluster.name }}
     organization: {{ .Values.cluster.organization }}
+    deleteOptions:
+      moveAppsHelmOwnershipToClusterAws: {{ .Values.apps.deleteOptions.moveAppsHelmOwnershipToClusterAws }}
     {{- if ne .Values.apps.cilliumApiEndpoint "" }}
     userConfig:
       cilium:

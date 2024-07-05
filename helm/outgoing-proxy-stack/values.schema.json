@@ -8,6 +8,14 @@
                 "cilliumApiEndpoint": {
                     "type": "string"
                 },
+                "deleteOptions": {
+                    "type": "object",
+                    "properties": {
+                        "moveAppsHelmOwnershipToClusterAws": {
+                            "type": "boolean"
+                        }
+                    }
+                },
                 "version": {
                     "type": "string"
                 }
