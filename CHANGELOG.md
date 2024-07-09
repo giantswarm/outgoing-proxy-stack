@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Upgrade `cluster-aws` to `0.79.0`
+
 ## [0.15.0] - 2024-07-05
 
 ### Changed
