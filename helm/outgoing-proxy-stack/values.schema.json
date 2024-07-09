@@ -2,14 +2,6 @@
     "$schema": "http://json-schema.org/schema#",
     "type": "object",
     "properties": {
-        "apps": {
-            "type": "object",
-            "properties": {
-                "cilliumApiEndpoint": {
-                    "type": "string"
-                }
-            }
-        },
         "aws": {
             "type": "object",
             "properties": {
@@ -30,7 +22,7 @@
                 "organization": {
                     "type": "string"
                 },
-                "version": {
+                "release": {
                     "type": "string"
                 },
                 "vpcCIDR": {
