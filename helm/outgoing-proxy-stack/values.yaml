@@ -20,7 +20,7 @@ cluster:
   organization: giantswarm
   # used by renovate
   # repo: giantswarm/cluster-aws
-  version: 0.79.0
+  version: 1.0.0
 
 proxy:
   # used by renovate
