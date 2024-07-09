@@ -2,6 +2,8 @@ apiVersion: v1
 data:
   values: |
     global:
+      release:
+        version: {{ .Values.cluster.release }}
       podSecurityStandards:
         enforced: true
       providerSpecific:
@@ -100,7 +102,6 @@ spec:
     configMap:
       name: {{ .Values.cluster.name }}-userconfig
       namespace: {{ $.Release.Namespace }}
-  version: {{ .Values.cluster.version }}
 ---
 apiVersion: v1
 data:
