@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.17.0] - 2024-07-09
+
 ### Changed
 
 - Upgrade `cluster-aws` to use `v25.0.0` GS release
@@ -192,7 +194,8 @@ In preparation to upgrade `cluster-aws` to [`v0.76.0`](https://github.com/giants
 
 - changed: `app.giantswarm.io` label group was changed to `application.giantswarm.io`
 
-[Unreleased]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.16.0...HEAD
+[Unreleased]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.17.0...HEAD
+[0.17.0]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.16.0...v0.17.0
 [0.16.0]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.15.0...v0.16.0
 [0.15.0]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.14.0...v0.15.0
 [0.14.0]: https://github.com/giantswarm/outgoing-proxy-stack/compare/v0.13.0...v0.14.0
