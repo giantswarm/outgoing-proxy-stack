@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.17.1] - 2024-10-03
 
+- Upgrade squid app version
+
 ## [0.17.0] - 2024-07-09
 
 ### Changed
