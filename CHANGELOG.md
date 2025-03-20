@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Revert upgrade to 28, going to 26 first.
+
 ## [0.18.0] - 2025-03-20
 
 - Upgrade `cluster-aws` to use `v28.5.3` GS release
