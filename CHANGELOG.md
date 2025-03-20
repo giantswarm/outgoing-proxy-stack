@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Upgrade `cluster-aws` to use `v28.5.3` GS release
+
 ## [0.17.1] - 2024-10-03
 
 - Upgrade squid app version
