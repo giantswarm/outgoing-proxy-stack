@@ -18,7 +18,7 @@ cluster:
   name: outgoing-proxy
   vpcCIDR: 10.255.0.0/16
   organization: giantswarm
-  release: 28.5.3
+  release: 26.4.2
 
 proxy:
   # used by renovate
